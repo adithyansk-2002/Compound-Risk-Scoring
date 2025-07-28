@@ -46,7 +46,7 @@ compound-risk-scoring/
 Download the repo as `.zip`, or:
 
 ```bash
-git clone https://github.com/your-username/compound-risk-scoring.git
+git clone https://github.com/adithyansk-2002/compound-risk-scoring.git
 cd compound-risk-scoring
 ```
 

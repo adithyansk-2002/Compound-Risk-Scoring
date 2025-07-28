@@ -1,10 +1,10 @@
-# 🏦 Compound Wallet Risk Scoring
+# Compound Wallet Risk Scoring
 
 This project analyzes the on-chain behavior of Ethereum wallets and assigns a **risk score (0–1000)** based on historical transaction activity, with a focus on interactions involving **Compound V2/V3 protocols**. It uses data pulled via the **Etherscan API**, extracts key behavioral features, and scores each wallet based on statistical normalization and weighted scoring logic.
 
 ---
 
-## 🔍 Objective
+## Objective
 
 The goal is to assess the **risk profile of wallets** by analyzing:
 - Transaction frequency and volume
@@ -15,7 +15,7 @@ A higher score indicates more stable and trusted behavior, while a lower score i
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 compound-risk-scoring/
@@ -39,7 +39,7 @@ compound-risk-scoring/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone or Download
 
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔑 Etherscan API Setup
+## Etherscan API Setup
 
 1. Visit [https://etherscan.io/myapikey](https://etherscan.io/myapikey)
 2. Create a free account and generate your API key.
@@ -80,7 +80,7 @@ ETHERSCAN_API_KEY = "<YOUR_API_KEY>"
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Step 1: Fetch Transaction Data
 
@@ -104,7 +104,7 @@ python src/score_model.py
 
 ---
 
-## 📊 Features Extracted
+## Features Extracted
 
 | Feature         | Description |
 |----------------|-------------|
@@ -118,7 +118,7 @@ These are normalized (0–1) using **Min-Max scaling**.
 
 ---
 
-## 🧮 Scoring Formula
+## Scoring Formula
 
 The risk score is a **weighted sum** of normalized features:
 
@@ -136,7 +136,7 @@ Then scaled to a range of `0 – 1000` for interpretability.
 
 ---
 
-## 📤 Output
+## Output
 
 After successful execution, your final result will be available at:
 
